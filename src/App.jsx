@@ -1,14 +1,17 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import Floor from "./componets/Floor";
+import { useDispatch } from "react-redux";
+import SelectDifficulty from "./componets/SelectDifficulty";
+import Tower from "./componets/Tower";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const dispatch = useDispatch();
 
   return (
     <div>
-      <h1>hello world</h1>
+      <SelectDifficulty />
+      <Tower />
     </div>
   );
 }

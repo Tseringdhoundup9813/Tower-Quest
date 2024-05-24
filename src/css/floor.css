@@ -1,0 +1,60 @@
+.floor-gems-and-bomb-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 2px solid black;
+  justify-content: center;
+  padding: 5px;
+  margin: 1px 0px;
+  gap: 5px;
+}
+.floor-gems-and-bomb-container > div {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.floor-gems-and-bomb-container > .highlightActive {
+  opacity: 1;
+  background-color: wheat;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.floor-gems-and-bomb-container > .highlightInActive {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.floor-gems-and-bomb-container > div > img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+.activeImage {
+  visibility: visible;
+  animation-name: objectShake;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  /* transition: all 0.3s ease; */
+}
+
+@keyframes objectShake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
