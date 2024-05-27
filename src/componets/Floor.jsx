@@ -3,14 +3,19 @@ import { useSelector } from "react-redux";
 import "../css/floor.css";
 import Box from "./Box";
 
-function Floor({ highlight, active }) {
-  const diffcultyState = useSelector((state) => state.difficultyLevel.level);
-  //   access randomly generated array
-  const randomBoxList = shuffle(diffcultyState);
+function Floor({ floor, activeFloor, level }) {
   return (
-    <div className="floor-gems-and-bomb-container">
-      {randomBoxList.map((item) => {
-        return <Box item={item} key={item.id} activeBox={active} />;
+    <div
+      className={
+        activeFloor
+          ? "activeFloor floor-gems-and-bomb-container "
+          : "inActiveFloor floor-gems-and-bomb-container"
+      }
+    >
+      {floor.map((box, index) => {
+        return (
+          <Box box={box} key={box.id} level={level} activeFloor={activeFloor} />
+        );
       })}
     </div>
   );

@@ -1,10 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import difficultyReducer from "./features/DifficultyLevelSlice";
-import towerReducer from "./features/towerSlice";
+
+import gameLogicReducer from "./features/gameLogicSlice";
 
 export const store = configureStore({
   reducer: {
     difficultyLevel: difficultyReducer,
-    tower: towerReducer,
+    gameLogic: gameLogicReducer,
   },
 });

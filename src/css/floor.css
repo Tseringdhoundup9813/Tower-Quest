@@ -17,17 +17,6 @@
   background-repeat: no-repeat;
 }
 
-.floor-gems-and-bomb-container > .highlightActive {
-  opacity: 1;
-  background-color: wheat;
-  border: 1px solid black;
-  cursor: pointer;
-}
-.floor-gems-and-bomb-container > .highlightInActive {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
 .floor-gems-and-bomb-container > div > img {
   width: 60%;
   height: 60%;
@@ -38,9 +27,38 @@
   animation-name: objectShake;
   animation-duration: 0.3s;
   animation-iteration-count: 1;
+  transition: all 0.6s ease-in;
   /* transition: all 0.3s ease; */
 }
 
+/* object visibility when selecting-------------- */
+/* active floor */
+.activeFloor {
+  opacity: 1;
+  background-color: wheat;
+  border: 1px solid black;
+  cursor: pointer;
+  visibility: visible;
+}
+
+/* inactive floor */
+.inActiveFloor {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+/* -------------------------------- */
+
+/* box visible when selecting */
+/* active box */
+.activeBox {
+  visibility: hidden;
+}
+.inactiveBox {
+  visibility: visible;
+}
+/* --------------------------------- */
+
+/* shake animation  */
 @keyframes objectShake {
   0% {
     transform: rotate(0deg);

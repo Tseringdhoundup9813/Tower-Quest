@@ -1,0 +1,13 @@
+.loose-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.loose-container > h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+}

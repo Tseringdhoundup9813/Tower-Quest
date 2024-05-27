@@ -1,0 +1,23 @@
+.difficulty-component {
+  display: flex;
+  gap: 20px;
+}
+.difficulty-component > button {
+  border: none;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.difficulty-component > button:hover {
+  background-color: rgba(255, 166, 0, 0.252);
+}
+
+.difficulty-component .active {
+  background-color: orange;
+  border-radius: 2px;
+  color: white;
+  transform: scale(1.2);
+}

@@ -1,0 +1,22 @@
+.zero-balance-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.zero-balance-container > button {
+  border: none;
+  background-color: tomato;
+  padding: 10px;
+  border-radius: 2px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.zero-balance-container > button:hover {
+  transform: scale(1.2);
+}

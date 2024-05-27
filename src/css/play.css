@@ -1,0 +1,15 @@
+.play-component {
+  padding: 10px;
+}
+.play-component > button {
+  border: none;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.play-component > button:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,39 @@
+.autoplay-component {
+  display: flex;
+  /* align-items: center;
+  gap: 20px;
+  border: 1px solid red; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.autoplay-component > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.autoplay-component > p {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.autoplay-component label {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(63, 63, 63);
+}
+.autoplay-component input {
+  width: 20px;
+  height: 20px;
+}
+
+.auto-play-guid {
+  font-size: 12px;
+  text-align: center;
+}
+.auto-play-guide-link-to-menu {
+  text-align: center;
+  font-weight: bold;
+}
